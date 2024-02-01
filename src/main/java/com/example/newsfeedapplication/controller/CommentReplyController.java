@@ -2,11 +2,14 @@ package com.example.newsfeedapplication.controller;
 
 import com.example.newsfeedapplication.entity.CommentReply;
 import com.example.newsfeedapplication.entity.PostComment;
-import com.example.newsfeedapplication.repository.CommentReplyRepository;
 import com.example.newsfeedapplication.repository.mockDB.CommentReplyDB;
-import com.example.newsfeedapplication.repository.mockDB.PostCommentDB;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
